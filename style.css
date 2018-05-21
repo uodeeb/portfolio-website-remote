@@ -1,0 +1,226 @@
+  /* style for nexus 5 __________________________________________________*/
+  /* zocial ____________________________________________________________*/
+[class*="zocial-"]:before {
+    color: #f69d3c;
+    font-family: 'zocial', sans-serif;
+    text-shadow: 2px 2px 2px #aaa;
+    display:inline-block;
+    left:2%;
+    margin-right:5%;
+    position:relative;
+    font-size:1.5em;
+    line-height:1.5em;
+    margin-top:10px;
+    font-weight:bold; 
+}
+div#social a:hover [class*="zocial-"]:before {
+    color: #070401;
+}  
+div#social a {
+    margin: 0 1em 0 0;
+    color: #000;
+    font: 1em sans-serif;
+}  
+div#social a:last-of-type {
+    margin: 0;
+}
+
+@media screen 
+    and (min-width:360px) 
+{
+     /* header__________________________________________________*/
+    .page-head-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .page-head-container div {
+        padding: 5px; 
+    }
+    .page-head-logo {
+        flex-basis: 30%;  
+    }
+    .name-profession {
+        flex: 70%;
+        padding: 0;
+        text-align: center;
+        font-size: 0.75em;
+        background-color:rgba(249, 217, 178, 0.199);
+        -webkit-box-shadow: -4px -4px 29px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -4px -4px 29px 0px rgba(0,0,0,0.75);
+        box-shadow: -4px -4px 29px 0px rgba(0,0,0,0.75);
+    }
+/* main__________________________________________________*/
+    .main {
+         display: flex;
+         justify-content: center;
+    }
+    .main img {
+         width: 300px;
+         height: 300px;
+    }
+/* projects_section__________________________________________________*/
+    .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-shadow: -4px -4px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px -4px 29px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px -4px 29px 0px rgba(0,0,0,0.75)
+    }
+    .project-container div {
+        width: 100%;
+        margin: auto;
+        background: rgba(249, 217, 178, 0.199); 
+    }
+     .project-container img {
+        display: block;
+        margin: auto; 
+        border: 2px solid 	#575757;         
+        width: 90%;
+        -webkit-box-shadow: 4px 4px 29px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 4px 4px 29px 0px rgba(0,0,0,0.75);
+        box-shadow: 4px 4px 29px 0px rgba(0,0,0,0.75);
+    }
+    .project-container div a:visited {
+        color:#F8931F;
+        text-decoration: none;
+    }
+    .project-container div a:link {
+        color:#0E445C;
+        text-decoration: none;
+    }
+    .proj-title{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1em;
+    }
+    .social-icons {
+         
+        text-align: center;
+    }
+ }
+ /*******************************************************************************/
+/* style for iPads __________________________________________________*/
+@media screen /*__________________________________________________*/
+    and (min-width: 768px)
+{
+/* header__________________________________________________*/
+    .page-head-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color:rgba(249, 217, 178, 0.199);
+        -webkit-box-shadow: -4px -4px 29px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -4px -4px 29px 0px rgba(0,0,0,0.75);
+        box-shadow: -4px -4px 29px 0px rgba(0,0,0,0.75);
+    }
+    .page-head-container div {
+        padding: 5px;  
+    }
+    .page-head-logo {
+        flex: 0.55;
+    }
+    .name-profession {
+        flex: 2;
+        padding: 0;
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+    .logo {
+        margin-top:20px;
+        margin-left: 5px;
+    }
+/* main__________________________________________________*/
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+    .main img {
+        width: 600px;
+        height: 600px;    
+    }
+    .social-icons {
+        text-align: center;
+        font-size: 2em;
+    }    
+    .proj-title {
+        font-size: 2em;
+    }
+}
+ /*******************************************************************************/
+ /* style for desktops __________________________________________________*/
+@media screen
+    and (min-width:991px)
+{
+    .name-profession {
+        flex: 2;
+        padding: 0;
+        text-align: right;
+        font-size: 1.5em;
+        padding-right: 250px;
+    }
+    .name , .profession{
+        margin-right: 25px;
+    }
+    .logo {
+        margin-top:20px;
+        margin-left: 0px;
+        
+    }
+    .main {
+        content: url(images_src/end-user01.v4.png);
+        display: block;
+        margin: auto;
+        background-color: #b4b0b0;
+        width: 100%;
+       
+    }
+    .main-page-pic {
+        width: 700px;
+        height: 700px;
+    }
+/* projects_section__________________________________________________*/
+    .project-container {
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    }
+    .project-container div {
+        width: 30%;
+        margin: 10px;
+        justify-content: flex-end;
+    }
+    .project-container img {
+        display: block;
+        margin: auto; 
+        border: 2px solid 	#575757;
+        width: 250px;
+        height: 150px;
+    }
+    .project-container div a:visited {
+        color: #575757;
+        text-decoration: none;
+    }
+    .project-container div a:link {
+        color:#0E445C;
+        text-decoration: none;
+    }
+    .proj-title{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font: 1.75em sans-serif;
+    } 
+    .social-icons {
+         
+        text-align: center;
+        font-size: 2em;
+        line-height: 2em;
+    }
+}
+ 
+ 
+ 
+ 
+ 
+ 
